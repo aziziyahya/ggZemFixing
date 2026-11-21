@@ -1,0 +1,102 @@
+## ═════════════════════════════════════════════════════════════════════
+##  ggZemFixing — .gitignore (.NET 9 / WinUI 3 / Windows App SDK)
+## ═════════════════════════════════════════════════════════════════════
+
+# ── Build & Compilation Outputs ──
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+publish/
+[Bb]uild/
+[Dd]ist/
+out/
+artifacts/
+Generated\ Files/
+[Gg]enerated\ [Ff]iles/
+
+# ── Visual Studio / IDE Caches ──
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+*.DotSettings.user
+*.visualstudio.json
+
+# ── JetBrains Rider ──
+.idea/
+*.sln.iml
+
+# ── Windows App SDK & WinUI 3 Packaging ──
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.pri
+*.xbf
+*.layout.resfiles
+*.pri.xml
+
+# ── Certificates & Private Signing Keys ──
+*.pfx
+*.pfx.pfx
+*.cer
+*.snk
+*.key
+*.pem
+
+# ── NuGet Restore & Package Artifacts ──
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.assets.json
+packages/
+
+# ── Diagnostics, Crash Dumps & Profiling ──
+*.log
+*.dmp
+*.mdmp
+*.crash
+*.diagsession
+*.performance
+crash.log
+out.log
+err.log
+
+# ── Temporary, Backup & Editor Files ──
+*.bak
+*.tmp
+*.temp
+*.swp
+*~
+*.orig
+
+# ── AI Agents / Tooling Workspace Cache ──
+.gemini/
+.antigravity/
+
+# ── Operating System System Files ──
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Private / Personal Payment Assets ──
+*QR_DuitNow*
+
+# ── Simulation Temporary Backups ──
+*.sim_backup
+

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- Light Mode Background Gradient -->
+    <linearGradient id="bgGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+
+    <!-- Database Cylinder Gradient -->
+    <linearGradient id="dbGradLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#1E40AF" />
+    </linearGradient>
+
+    <!-- Database Top Cap Gradient -->
+    <linearGradient id="dbTopGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <!-- Gear Accent Gradient -->
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="55%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <!-- Soft Ambient Shadow -->
+    <filter id="shadowLight" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.14" />
+    </filter>
+
+    <!-- Elevation Shadow for Gear on Database -->
+    <filter id="gearShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Rounded Square App Icon Base -->
+  <rect x="16" y="16" width="224" height="224" rx="52" fill="url(#bgGradLight)" stroke="#CBD5E1" stroke-width="2" />
+
+  <!-- Subtle Background Grid Lines -->
+  <g stroke="#E2E8F0" stroke-width="1.5" opacity="0.8">
+    <line x1="16" y1="72" x2="240" y2="72" />
+    <line x1="16" y1="128" x2="240" y2="128" />
+    <line x1="16" y1="184" x2="240" y2="184" />
+    <line x1="72" y1="16" x2="72" y2="240" />
+    <line x1="128" y1="16" x2="128" y2="240" />
+    <line x1="184" y1="16" x2="184" y2="240" />
+  </g>
+
+  <!-- Centered Database Stack Group -->
+  <g filter="url(#shadowLight)">
+    <!-- Bottom Tier -->
+    <path d="M 62 150 L 62 178 C 62 191.25 91.55 202 128 202 C 164.45 202 194 191.25 194 178 L 194 150 Z" fill="url(#dbGradLight)" />
+    <ellipse cx="128" cy="150" rx="66" ry="22" fill="#2563EB" />
+
+    <!-- Middle Tier -->
+    <path d="M 62 110 L 62 138 C 62 151.25 91.55 162 128 162 C 164.45 162 194 151.25 194 138 L 194 110 Z" fill="url(#dbGradLight)" />
+    <ellipse cx="128" cy="110" rx="66" ry="22" fill="#3B82F6" />
+
+    <!-- Top Tier -->
+    <path d="M 62 70 L 62 98 C 62 111.25 91.55 122 128 122 C 164.45 122 194 111.25 194 98 L 194 70 Z" fill="url(#dbGradLight)" />
+    <ellipse cx="128" cy="70" rx="66" ry="22" fill="url(#dbTopGradLight)" />
+
+    <!-- Status Indicator Lights on Database Tiers -->
+    <circle cx="84" cy="102" r="4" fill="#4ADE80" />
+    <circle cx="98" cy="105" r="4" fill="#4ADE80" />
+
+    <circle cx="84" cy="142" r="4" fill="#FBBF24" />
+    <circle cx="98" cy="145" r="4" fill="#4ADE80" />
+
+    <circle cx="84" cy="182" r="4" fill="#4ADE80" />
+    <circle cx="98" cy="185" r="4" fill="#4ADE80" />
+  </g>
+
+  <!-- Large Precision Gear Directly Overlapping Database -->
+  <g filter="url(#gearShadow)" transform="translate(160, 156)">
+    <!-- 8-Tooth Gear Silhouette + Center Bore (evenodd cutout shows database behind it) -->
+    <path fill="url(#gearGrad)" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round" fill-rule="evenodd" d="
+      M -8 -48 L 8 -48 L 10 -37 C 14 -36 18 -34 22 -31 L 31 -38 L 41 -28 L 34 -18
+      C 37 -14 39 -10 40 -6 L 51 -4 L 51 11 L 40 13 C 39 17 37 21 34 25 L 41 34
+      L 31 44 L 22 37 C 18 40 14 42 10 43 L 8 54 L -8 54 L -10 43 C -14 42 -18 40 -22 37
+      L -31 44 L -41 34 L -34 25 C -37 21 -39 17 -40 13 L -51 11 L -51 -4 L -40 -6
+      C -39 -10 -37 -14 -34 -18 L -41 -28 L -31 -38 L -22 -31 C -18 -34 -14 -36 -10 -37 Z
+      M 0 -13 A 16 16 0 1 0 0 19 A 16 16 0 1 0 0 -13 Z
+    " />
+    <!-- Inner Bevel Ring Detail -->
+    <circle cx="0" cy="3" r="24" fill="none" stroke="#92400E" stroke-width="1.5" opacity="0.35" />
+  </g>
+</svg>

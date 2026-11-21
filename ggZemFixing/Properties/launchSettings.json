@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ggZemFixing (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ggZemFixing (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
